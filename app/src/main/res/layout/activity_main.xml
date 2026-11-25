@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#858585"
     android:padding="16dp"
-    android:id="@+id/main"
-    >
+    android:id="@+id/main">
 
     <!--หน้าจอแสดงผล-->
     <TextView
@@ -25,7 +23,7 @@
 
     <!--โซนปุ่ม-->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
@@ -38,39 +36,35 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!--แต่ละปุ่ม-->
-                <Button
-                    android:id="@+id/btnAC"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="AC"
-                    android:layout_margin="4dp"/>
-                <Button
-                    android:id="@+id/btnDel"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="DEL"
-                    android:layout_margin="4dp"/>
-                <Button
-                    android:id="@+id/btnMod"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="%"
-                    android:layout_margin="4dp"/>
-                <Button
-                    android:id="@+id/btnDiv"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+"
-                    android:backgroundTint="#50555C"
-                    android:layout_margin="4dp"/>
-
-
-
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AC"
+                android:layout_margin="4dp"/>
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DEL"
+                android:layout_margin="4dp"/>
+            <Button
+                android:id="@+id/btnMod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="%"
+                android:layout_margin="4dp"/>
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="/"
+                android:backgroundTint="#50555C"
+                android:layout_margin="4dp"/>
         </LinearLayout>
 
         <!--แถวที่ 2-->
@@ -80,7 +74,6 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!--แต่ละปุ่ม-->
             <Button
                 android:id="@+id/btn7"
                 android:layout_width="0dp"
@@ -103,18 +96,14 @@
                 android:text="9"
                 android:layout_margin="4dp"/>
             <Button
-                android:id="@+id/btnx"
+                android:id="@+id/btnmultiply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="x"
                 android:backgroundTint="#50555C"
                 android:layout_margin="4dp"/>
-
-
-
         </LinearLayout>
-
 
         <!--แถวที่ 3-->
         <LinearLayout
@@ -123,7 +112,6 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!--แต่ละปุ่ม-->
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="0dp"
@@ -146,15 +134,15 @@
                 android:text="6"
                 android:layout_margin="4dp"/>
             <Button
-                android:id="@+id/btne"
+                android:id="@+id/btnminus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="-"
                 android:backgroundTint="#50555C"
                 android:layout_margin="4dp"/>
-
         </LinearLayout>
+
         <!--แถวที่ 4-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -162,7 +150,6 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!--แต่ละปุ่ม-->
             <Button
                 android:id="@+id/btn1"
                 android:layout_width="0dp"
@@ -185,14 +172,13 @@
                 android:text="3"
                 android:layout_margin="4dp"/>
             <Button
-                android:id="@+id/btnt"
+                android:id="@+id/btnplus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="+"
                 android:backgroundTint="#50555C"
                 android:layout_margin="4dp"/>
-
         </LinearLayout>
 
         <!--แถวที่ 5-->
@@ -202,9 +188,8 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!--แต่ละปุ่ม-->
             <Button
-                android:id="@+id/btncl"
+                android:id="@+id/btnSign"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -218,34 +203,22 @@
                 android:text="0"
                 android:layout_margin="4dp"/>
             <Button
-                android:id="@+id/btn."
+                android:id="@+id/btnDot"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="."
                 android:layout_margin="4dp"/>
             <Button
-                android:id="@+id/btnll"
+                android:id="@+id/btnEquals"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="="
                 android:backgroundTint="#32383B"
                 android:layout_margin="4dp"/>
-
         </LinearLayout>
 
-
-
-
-
-
-
-
     </LinearLayout>
-
-
-
-
 
 </LinearLayout>
